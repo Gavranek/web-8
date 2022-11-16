@@ -1,0 +1,23 @@
+main {
+    max-width:960px;
+}
+
+
+#popup form{
+    background-color: #5aeee8;
+    width: 100vW;
+    border-width: 3px;
+}
+textarea{
+    overflow: auto;
+    resize: none;
+}
+
+@media screen and (min-width:576px) {
+    #popup form{
+        max-width: 50vW;
+    }
+    textarea{
+        resize: vertical;
+    }
+}

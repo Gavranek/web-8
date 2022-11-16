@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+<head>
+	<title>Задание 8</title>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="icon.png" rel="shortcut icon">
+	<meta content="width=device-width initial-scale=1" name="viewport">
+	<script defer src="main.js"></script>
+</head>
+<body class="container-fluid bg-light">
+<main>
+	<h1>Feedback form</h1>
+</main>
+<div class="text-center" id="popup">
+	<form action="https://formcarry.com/s/cB6SsjsbV" class="mx-auto text-dark mt-sm-2 p-2 border rounded mx-auto border-light" method="POST">
+		<label class="form-check-label" for="name">Name:</label>
+		<input class="form-control save-to-storage" id="name" name="name" required type="text"> <br>
+		
+		
+		<label class="form-check-label" for="email">E-mail:</label>
+		<input class="form-control save-to-storage" id="email" name="email" required type="email"> <br>
+		
+		<label class="form-check-label" for="message">Message:</label> <br>
+		<textarea class="form-control save-to-storage" id="message" name="message" required rows="8"></textarea> <br>
+		
+		<input class="form-check-input" id="checkbox" name="agreement" required type="checkbox" value="agreed">
+		<label class="form-check-label" for="checkbox">Agree</label> <br>
+		
+		<button class="btn btn-outline-primary" id="formSubmit" type="button">Send</button>
+		<div id="result"></div>
+	</form>
+</div>
+</body>
+</html>
