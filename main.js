@@ -14,6 +14,10 @@ window.addEventListener("DOMContentLoaded", function () {
     formButton.addEventListener("click", sendForm);
 });
 
+function saveData() {
+    localStorage.setItem(this.id, this.value);
+}
+
 function formShow() {
     let popup = document.getElementById("popup");
     if (history.state !== null && history.state.form === true) {
@@ -28,9 +32,6 @@ function formShow() {
     }
 }
 
-function saveData() {
-    localStorage.setItem(this.id, this.value);
-}
 
 function sendForm() {
     let name = document.getElementById("name").value;
@@ -58,6 +59,10 @@ function sendForm() {
                 localStorage.clear();
                 result.style.color = "blue";
                 result.innerHTML = "Success";
+            }
+            else{
+                result.style.color = "red";
+                result.innerHTML = "Error";
             }
         }
     } else {
