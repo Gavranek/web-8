@@ -24,7 +24,7 @@ textarea {
 
 @media screen and (min-width: 576px) {
     #popup form {
-        max-width: 50vW;
+        max-width: 45vW;
     }
 
     textarea {

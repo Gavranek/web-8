@@ -62,7 +62,7 @@ function sendForm() {
         }
     } else {
         result.style.color = "red";
-        result.innerHTML = "Заполните форму полностью и отметьте чекбокс";
+        result.innerHTML = "Fill out the form completely and check the checkbox!";
     }
 }
 
